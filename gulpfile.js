@@ -18,12 +18,17 @@ const paths = {
     js: 'src/js/**/*.js',
     imagenes: 'src/img/**/*',
     media: 'src/media/**/*',
-    // descripcion: ''
+    descripcion: 'src/descripcion/**/*'
 }
 function videos() {
     return src(paths.media)
       .pipe(dest('build/media'));
   }
+
+function descripcion() {
+return src(paths.descripcion)
+    .pipe(dest('build/descripcion'));
+}
   
 
 function css() {
@@ -66,11 +71,12 @@ function watchArchivos() {
     watch(paths.js, javascript);
     watch(paths.imagenes, imagenes);
     watch(paths.imagenes, versionWebp);
-    watch(paths.media, videos);
+    watch(paths.media, videos, descripcion);
 }
 
 
 exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.videos = videos;
-exports.default = parallel(css, javascript, imagenes, versionWebp, videos, watchArchivos);
+exports.descripcion = descripcion;
+exports.default = parallel(css, javascript, imagenes, versionWebp, videos, descripcion, watchArchivos);
