@@ -1,0 +1,227 @@
+/* body index*/
+.contenedor__main {
+    display: block;
+
+}
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+}
+.contenido-principal {
+    margin-top: -19.7rem;
+    margin-bottom: 0;
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 0px 12px 5px rgba(112,112,112,1);
+    -moz-box-shadow: 0px 0px 12px 5px rgba(112,112,112,1);
+    box-shadow: 0px 0px 12px 5px rgba(112,112,112,1);
+    background-color: $blanco;
+    padding:2rem
+}
+
+.contenedor__cuerpo {
+    width: 100%;
+    display: block;
+    grid-template-rows: 2fr;
+    font-size: 1.4rem;
+    font-family: $fuenteprincipal;
+    // flex-basis: calc( 0 0 -1rem);
+    @include flex-basis (50% - 50% -1rem);
+    gap: 2rem;
+}
+
+
+.contenedor__texto {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.contenedor1 {
+    font-family: $fuenteprincipal;
+    gap: 2rem;
+
+    video {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-radius: 1%;
+    }
+   
+}
+
+.contenedor2 {
+
+    video {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.contenedor3 {
+
+    video {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* listado de destaque */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--base_azul);
+    padding-right: 2rem;
+    border: none;
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--negro);
+            margin: 0 auto;
+        }
+}
+
+.widget,
+.widget h4 {
+    font-family: var(--fuenteprincipal);
+    font-size: 1.3rem;
+    font-weight: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+   
+  
+}
+
+.widget-curso {
+    margin:.5rem auto;
+    column-gap: 2rem;
+    gap: 2rem;
+    list-style: none;
+    font-family: var(--fuenteprincipal);
+
+       
+    
+        
+   
+}
+
+// desktop
+
+@include desktop {
+
+    //header
+
+
+    // Main
+    .main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+      }
+      .contenedor__cuerpo {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .contenedor__texto {
+      
+        font-size: 3.8rem;
+        text-align: justify;
+    }
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        column-gap: 2rem;
+        margin-top: -20rem;
+        width: 90%;
+    }
+    .contenedor__cuerpo {
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+        font-size: 2.4rem;
+        font-family: var(--fuenteprincipal);
+        column-gap: 2rem;
+     }
+     .contenedor1{
+        width: 100%;
+        gap: 2rem;
+        grid-row: 2 / 1;
+        align-items: center;
+   }
+
+    .contenedor2{
+        width: 100%;
+        gap: 2rem;
+        grid-column: 2 / 3;
+        grid-row: 2 / 1;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .contenedor3 {
+        width: 100%;
+        gap: 2rem;
+        grid-row: 3 / 1
+    }
+
+    .contenedor-texto {
+        display: flex;
+        text-align: justify;
+        
+    }
+
+    /* listado de destaque */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: $base_azul;
+        padding-right: 2rem;
+        border: none;
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $negro;
+            margin: 0 auto;
+        }
+    }
+
+    .widget,
+.widget h4 {
+    font-family: $fuenteprincipal;
+    font-size: 1.3rem;
+    font-weight: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+   
+  
+}
+
+.widget-curso {
+    margin:.5rem auto;
+    column-gap: 2rem;
+    gap: 2rem;
+    list-style: none;
+    font-family: $fuenteprincipal;
+}
+
+}

@@ -1,0 +1,28 @@
+//colores
+$primario: #0d87bb;
+$secundario: #084965;
+$base: #72727200;
+$base_azul:#0d87bb30;
+$amarillo: #ecf900e0;
+$negro:#000000;
+$transOscuro : #00000077;
+$blanco: #ffffff;
+$gris: #8d8787;
+$rosa: rgb(238,174,202);
+
+    //fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet');    
+$fuenteprincipal:'Libre Baskerville', serif;
+
+//fuentes
+$delgada: 300;
+$regular : 400;
+$bold: 700;
+$black: 900;
+
+$separacion: 5rem;
+
+// Tamaño de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;

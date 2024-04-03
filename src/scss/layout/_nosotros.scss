@@ -1,0 +1,168 @@
+//nosotros global
+
+.nosotros {
+    h1 {
+        color: $negro;
+    }
+}
+
+.caja__nosotros {
+    a {
+        font-family: $fuenteprincipal;
+    
+        line-height: 1.5;
+        color: $negro;
+        text-align: justify;
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: justify;
+        font-family: $fuenteprincipal;
+    }
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: -20rem auto 0;
+    box-shadow: 0 0 6px $negro;
+    overflow: hidden;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(220, 220, 220) 0%, rgba(148,187,233,1) 100%);
+
+}
+
+.mision {
+     h3 {
+        text-transform: uppercase;
+     }
+
+    
+}
+
+.vision {
+    h3 {
+        text-transform: uppercase;
+    }
+   
+
+}
+
+.valores {
+    h3 {
+        text-transform: uppercase;
+    }
+
+ 
+
+   
+  
+  
+
+}
+.valores-texto {
+        ul, li {
+            font-family: $fuenteprincipal;
+            list-style: disc;
+            font-size: 2rem;
+            text-align: justify;
+
+            @include tablet {
+                text-align: center;
+                list-style: none;
+            }
+
+            @include desktop {
+                text-align: justify;
+                list-style-type: disc;
+            }
+        }
+}
+
+@include desktop {
+
+    .caja__nosotros {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgb(220, 220, 220) 0%, rgba(148,187,233,1) 100%);
+    margin-bottom: 0;
+}
+   .caja__mision {
+    display: grid;
+   
+    justify-content: center;
+    padding: 5rem;
+    width: 100%;
+}
+
+   .mision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+    h3 {
+        text-decoration: none;
+        color: $negro;
+        font-size: 8rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: justify;
+        padding: 2rem;
+    }
+   
+   }
+   .vision {
+    display: grid;
+    padding-top: 25rem;
+    justify-content: center;
+   
+}
+.vision h3 {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 8rem;
+}
+
+.caja__vision {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -22rem;
+    width: 100%;
+ 
+}
+.caja__valores {
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto;
+
+    h3 {
+        font-size: 8rem;
+        text-transform: uppercase;
+        color: var(--negro);
+    }
+}
+
+.valores {
+    margin-top: 9rem;
+}
+
+.valores-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: center;
+    margin-top: 4rem;
+  
+    ul {
+        list-style-type: circle;
+    }
+}
+}

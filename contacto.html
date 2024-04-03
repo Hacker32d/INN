@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, orientation=vertical">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Web</title>
+</head>
+<body>
+    <!-- barra de navegacion -->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="logo">
+                <div class="logo-img"> <img src="build/media/logo/IconOnly_Transparent.png" alt="logo"> </div>
+                <h1>iN<span>N</span></h1>
+            </div>
+           
+            <nav class="navegacion-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Proyectos</a>
+                        <div class="dropdown-content">
+                            <a href="SanMiguel.html">Urbanizacion San Miguel</a>
+                            <a href="Bethel.html">Urbanizacion Bethel</a>
+                            <a href="ElDoral.html">Residencial Ciudad El Doral</a>
+                        </div>
+                    </li>
+                    </div>
+            </nav>
+            
+        </div>
+        <div class="video">
+            <div class="overlay"> <!-- despues del overlay se ingresa el video para poder superponer las letras-->
+                <div class="contenedor contenido-video">
+                    <h2>Tu Futuro Esta En Buenas Manos
+                    </h2>
+                </div>
+            
+            </div>
+            <video autoplay muted loop>
+                <source src="build/video/concierto.ogg" type="video/ogg">
+                <source src="build/video/concierto.webm" type="video/webm">
+                <source src="build/media/header.mp4" type="video/mp4">
+                </video>
+        </div>
+    
+    
+        
+            <!-- aqui termina el despliegue -->
+    
+        </header>
+
+       
+     
+  
+    
+ 
+
+
+    <!-- aqui termina -->
+      
+
+        <!-- aqui inicia el Cuerpo -->
+
+       
+        <section class="contenedor__contacto">
+         
+           
+      <form id="contactForm">
+          <label class="contacto__label" for="nombre">Nombre y Apellido:</label>
+          <input class="contacto__input" type="text" id="nombre" name="nombre" required>
+    
+          <label class="contacto__label" for="email">Correo Electronico:</label>
+          <input class="contacto__input" type="email" id="email" name="email" required>
+    
+          <label class="contacto__label" for="telefono">Numero de Teléfono:</label>
+          <input class="contacto__input" type="tel" id="telefono" name="telefono" required>
+    
+          <label class="contacto__label" for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+          <button class="boton-rosa" type="sumit" onclick="enviarMensaje()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+              </svg> Enviar Mensaje</button>
+      </form>
+     
+      </section>
+ 
+      <footer class="footer">
+          
+
+        <div class="footer-columna">
+            <div class="setting__proyectos">
+                <h3>Proyectos</h3>
+                <div class="setting__texto">
+                    <ul>
+                        <li> <a href="SanMiguel.html">Urbanizacion San Miguel</a></li>
+                        <li> <a href="Bethel.html">Urbanizacion Bethel</a></li>
+                        <li> <a href="ElDoral.html">Residencial Ciudad El Doral</a></li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+           
+            
+            <div class="setting__agencia">
+                <h3>Agencia</h3>
+                <div class="setting__texto">
+                    <p>"En Inmobiliarias Nelson, estamos comprometidos en convertir tus sueños de hogar en una realidad palpable.
+                        Nuestra dedicación a la excelencia en el sector inmobiliario nos distingue, ofreciendo  asesoramiento experto para cada cliente. </p>
+
+                </div>
+            </div>
+
+            <div class="setting__contacto">
+                <h3>Contacto</h3>
+                <div class="setting__texto">
+                    <a href="mailto:solsweethome.nic@gmail.com">solsweethome.nic@gmail.com</a>
+
+                </div>
+            </div>
+          
+           
+        </div>
+        <h4 class="cinta">Todos los derechos reservados</h4>
+  </footer>
+   
+ <script src="/js/contacto.js"></script>
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

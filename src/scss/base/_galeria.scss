@@ -1,0 +1,100 @@
+//galeria global
+
+.linea {
+    background: var(--amarillo);
+    height: 1rem;
+    width: 100%;
+    display: block;
+}
+
+.galeria {
+    background-color: var(--blanco);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+    width: 100%;
+    gap: 2rem;
+    /* padding: 2rem; */
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow:  0 0 6px $negro;
+        &:hover img {
+            transform:  scale(1.2);
+        }
+    }
+
+    img {
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+
+    
+} 
+
+.galeria-box{
+    background-color: $base;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 1rem 0 ;
+
+    &:hover {
+        color: $amarillo;
+        transition: 1.5s;
+    }
+}
+
+.light-box {
+    position: fixed;
+    top: -100%; /* Cambié '250' a '-100%' para que esté inicialmente fuera de la pantalla */
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 1000;
+    padding:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease-out; /* Añadí una transición para suavizar el movimiento */
+
+    img {
+        width: 60vw;
+        max-height: 85vh;
+    }
+
+    &:target {
+        top: 380;
+        @include desktop {
+            top:80;
+        }
+    }
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #f6f6f6;
+    color: #000000;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: $negro;
+    height: 30px;
+    width: 20px;
+    margin: 2rem;
+    border-radius: 5%;
+}
+

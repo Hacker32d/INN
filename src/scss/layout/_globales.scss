@@ -1,0 +1,90 @@
+/* Estandares de la web */
+html{
+    box-sizing: border-box;
+    font-size: 62.8%;
+    font-family: $fuenteprincipal;
+
+}
+*,*:before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+   overflow-x: hidden;
+   background: #e9e9e9;
+/*    
+   background: radial-gradient(circle, var(--primario) 20%, var(--blanco) 100%);
+    */
+   margin: 0;
+   
+}
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+  }
+
+
+/* Desactivar desplazamiento */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Habilitar desplazamiento en ciertos elementos si es necesario */
+.elemento-con-desplazamiento {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color:$blanco;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    background: -webkit-linear-gradient($rosa, $negro);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+h3 {
+
+    font-size: 2.4rem;
+    background: -webkit-linear-gradient($secundario, $negro);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+strong {
+    font-size: 2.8rem;
+}
+
+img {
+    width: 100%;   
+}
+
+@media (max-width: 768px) {
+        /* Las reglas anteriores aquí */
+        /* Desactivar zoom */
+    body {
+        touch-action: manipulation;
+    }
+
+    /* Desactivar desplazamiento */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+}
+
