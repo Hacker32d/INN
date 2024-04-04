@@ -1,16 +1,24 @@
 //galeria global
 
 .linea {
-    background: var(--amarillo);
+    background: $amarillo;
     height: 1rem;
     width: 100%;
     display: block;
 }
 
 .galeria {
-    background-color: var(--blanco);
+    background-color: $gris;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+   @include tablet {
+    padding: 2rem;
+   } 
+
+   @include desktop {
+    grid-template-columns: repeat(3, minmax(350px, 1fr) );
+   }
+    
     width: 100%;
     gap: 2rem;
     /* padding: 2rem; */

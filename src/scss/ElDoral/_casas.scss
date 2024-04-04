@@ -1,73 +1,237 @@
-/* ---------------------------------ElDoral Descripciones de casas---------------------------------------- */
-
-.h1__casa {
-
-    h1 {
-        color: $negro;
-        margin-bottom: 2rem;
-    }
-}
-
-.casa__img {
-    width: 100%;
-}
-
-.casa__texto {
+/* descripcion general de las casas */
+#gallery-casa {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    font-family: $fuenteprincipal;
-    background: rgb(13,135,187);
-    background: linear-gradient(0deg, $blanco 0%, $secundario 84%);
-        ul {
-            padding: 1rem;
-            font-size: 1.5rem;
-        }
-        ul li {
-            display: flex;
-            align-items: left;
-            justify-content: left;
-            margin-bottom: 2rem; /* Ajusta el espacio entre elementos de la lista según tu preferencia */        
-            margin: 0;
-        }
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: -18.4rem;
+}
 
-        p {
-            margin: 0;
-            background: $base_azul;
-        }
-
-        ul li p {
-            background: $base_azul;
-        }
-
-        span {
-            font-size: 1.5rem;
-            font-style: none;
-        }
-
-        button {
-            display: flex;
-            margin: 1rem auto;
-            padding: 1rem;
-            justify-content: center;
-        }
-  }
-
-  .texto__resumen {
-    margin-bottom: 10px; /* Agrega un margen inferior para separar el resumen del resto del contenido */
-    font-size: 3rem;
-    text-transform: uppercase;
+.click-img  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    animation: cambio-color 2s infinite alternate;  /* cambiar color sin parar */
+   
+        &:hover {
+            animation-play-state: paused;
+        }
 
+}
+
+@keyframes cambio-color {
+    0% {
+        color: var(--gris);
+    }  
+    50% {
+        color: var(--rosa); /* Color inicial */
+    }
+   
+    100% {
+        color: var(--primario); /* Color final (vuelve al inicial) */
+    }
+}
+
+.descripcion-casa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2rem;
+    
+}
+.descripcion-casa  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    list-style: none;
+   
+}
+
+
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* reproductor de video*/
+
+#lightbox-video{
+    padding: 5rem;
+    margin: 0 auto;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+
+/* aqui termina el reproductor */
+
+.casa__contacto {
+    margin-top: 70rem;
+
+}
+.descripcion-casa {
+    align-items: center;
+    font-size: 2rem;
+    text-align: justify;
+    background-color: var(--blanco);
+    color: var(--negro);
+    gap: 1rem;
+}
+
+.descripcion-casa-contenido {
+    border-bottom: solid 1px var(--negro);
+}
+
+.parking {
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--blanco);
+    border-radius: 5%;
+    border-color: var(--negro);
+    position: relative;
+  }
+  .parking:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: var(--base_azul);
+    transition: all 1s ease;
+    border-radius: 15%;
+  }
+  .parking:hover:before {
+  width: 100%;
+  }
+  .area {
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--blanco);
+    border-radius: 5%;
+    border-color: var(--negro);
+    position: relative;
+  }
+  .area:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: var(--base_azul);
+    border-radius: 15%;
+    transition: all 1s ease;
+  }
+  .area:hover:before {
+  width: 100%;
   }
 
-  .caja__valores {
-    text-align: justify;
-    h3 {
-        text-transform: uppercase;
-       
-    }
+  .seguridad {
+    color: var(--negro);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--blanco);
+    border-radius: 5%;
+    border-color: var(--negro);
+    position: relative;
+  }
+  .seguridad:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 15%;
+    background: var(--base_azul);
+    transition: all 1s ease;
+  }
+  .seguridad:hover:before {
+  width: 100%;
+  }
+/* aqui termina */
+/* ubicanos */
+
+.mapa {
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--negro);
     p {
         font-size: 2rem;
     }
- }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        column-gap: 1rem;
+        text-align: center;
+        border: solid 1px var(--negro);
+        
+        
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+        border-bottom:var(--amarillo) ;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    button {
+        display: flex;
+
+    }
+}
+
+.mapa-municipio {
+    margin-left: -1rem;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 0rem;
+}
+
+
