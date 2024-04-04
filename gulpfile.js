@@ -9,6 +9,7 @@ const terser = require('gulp-terser-js');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin'); // Minificar imagenes 
 const cache = require('gulp-cache');
+const notify = require('gulp-notify');
 const clean = require('gulp-clean');
 const webp = require('gulp-webp');
 
@@ -53,13 +54,15 @@ function javascript() {
 function imagenes() {
     return src(paths.imagenes)
         .pipe(cache(imagemin({ optimizationLevel: 3 })))
-        .pipe(dest('build/img'));
+        .pipe(dest('build/img'))
+        .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 function versionWebp() {
     return src(paths.imagenes)
         .pipe(webp())
-        .pipe(dest('build/img'));
+        .pipe(dest('build/img'))
+        .pipe(notify({ message: 'Imagen Completada'}));
 }
 
 
