@@ -35,13 +35,30 @@
 }
 
 .logo {
+  
+
     h1 {
+       
         color: $primario;
 
         span {
             color: $rosa;
         }
     }
+
+   
+
+    p {
+        visibility: hidden;
+    }
+    @include desktop {
+        p {
+            visibility: visible;
+            font-size: 2rem;
+            color: $blanco;
+        }
+    }
+   
 
     
 }

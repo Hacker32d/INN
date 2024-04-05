@@ -41,7 +41,7 @@
 
         // Si todas las validaciones pasan, el formulario se envía
                  // Crea el enlace de WhatsApp con los datos del formulario
-        var url = 'https://api.whatsapp.com/send?phone=' + 5058172-1759 + '&text=Hola, soy ' + nombre + '. ' + mensaje;
+        var url = 'https://api.whatsapp.com/send?phone=' +50581721759+ '&text=Hola, soy ' + nombre + '. ' + mensaje;
          // Redirige a WhatsApp
         window.location.href = url;
         alert("Mensaje enviado correctamente.");

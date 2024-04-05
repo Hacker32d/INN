@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/Styles/Styles.css">
+    <link rel="stylesheet" type="text/css" href="/build/css/app.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
@@ -21,7 +21,7 @@
     <header class="header">
         <div class="contenedor contenido-header">
             <div class="logo">
-                <h1>WEB <span>NAME</span></h1>
+                <h1>IN<span>HOGARES</span></h1>
             </div>
            
             <nav class="navegacion-principal">
@@ -43,14 +43,15 @@
         <div class="video">
             <div class="overlay"> <!-- despues del overlay se ingresa el video para poder superponer las letras-->
                 <div class="contenedor contenido-video">
-                    <h2 class="contacto__h2">Urbanizacion San Miguel</h2>
+                    <h2 class="contacto__h2">Ciudad El Doral</h2>
                 </div>
             
             </div>
             <video autoplay muted loop style="width: 1920px;height: 1080px;">
-                <source src="/media/san miguel/sanmiguel.mp4" type="video/mp4">
-                <source src="video/concierto.ogg" type="video/ogg">
-                <source src="video/concierto.webm" type="video/webm">
+                <source src="../../media/ElDoral/ElDoral Intro.webm" type="video/webm">
+                <source src="../../media/ElDoral/ElDoral Intro.ogg" type="video/ogg">
+                <source src="../../media/ElDoral/ElDoral Intro.mp4" type="video/mp4">
+               
                 </video>
         </div>
     
@@ -68,8 +69,8 @@
         <section class="main-caja1">
             
             <div id="gallery-casa">
-             <div class="click-img"> <p>Haz click en la imagen</p></div>
-                <img class="thumbnail sombra"src="/img/ElDoral/casa (1).jpeg" alt="Imagen 1" onclick="openLightbox('/media/ElDoral/promesa.mp4', 'Imagen 1')">
+             <div class="click-img"> <p>Haz click en la imagen </p></div>
+                <img class="thumbnail sombra"src="../../img/ElDoral/cielo/casa (1).jpeg" alt="Imagen 1" onclick="openLightbox('/media/ElDoral/promesa.mp4', 'Imagen 1')">
                 <div class="descripcion-casa sombra">
                     <h3 class="descripcion-casa-contenido__h3">Descripcion</h3>
                     <div class="descripcion-casa-contenido">
@@ -192,10 +193,10 @@
     </section>
        
 
-    <footer>
+    <footer class="footer">
           
 
-        <div class="footer">
+        <div class="footer-columna">
             <div class="setting__proyectos">
                 <h3>Proyectos</h3>
                 <div class="setting__texto">
