@@ -17,3 +17,14 @@
 .boton-gris {
     @include boton($gris, inline-block)
 }
+
+// lineas
+
+.linea-amarilla {
+    @include linea($amarillo, block);
+    background-color:$amarillo;
+}
+.linea-azul {
+    @include linea($primario, block);
+   background-color: $primario;
+}

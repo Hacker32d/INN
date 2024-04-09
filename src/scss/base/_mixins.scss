@@ -40,3 +40,8 @@
 @mixin flex-basis($valor) {
     flex-basis: calc(#{$valor});
   }
+
+@mixin linea ($bgcolor, $display) {
+    height: 1rem;
+    width: 100%;
+} 
