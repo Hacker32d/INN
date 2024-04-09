@@ -1,5 +1,5 @@
 .setting {
-    margin-top: -20rem;
+    margin-top: -27.9rem;
     font-size: 2rem;
     text-align: justify;
 
@@ -13,21 +13,21 @@
     font-weight: 400;
     gap: 2rem;
     line-height: 30px;
-    font-family: var(--fuenteprincipal);
+    font-family: $fuenteprincipal;
     border: none;
 
 }
 
 .caja1 {
     padding: 2rem;
-    color: var(--negro);
+    color: $negro;
 
     }
 
 
 .caja2 {
         padding: 2rem;
-        color: var(--negro);
+        color: $negro;
     }
 
 @include tablet {
@@ -52,10 +52,10 @@
         background: rgb(238,174,202);
         background: radial-gradient(circle, rgb(220, 220, 220) 0%, rgba(148,187,233,1) 100%);
 
-            &:hover {
-                transition: 1s ;
-                transform: scale(1.05);
-            }
+            // &:hover {
+            //     transition: 1s ;
+            //     transform: scale(1.05);
+            // }
 
             p {
                 font-family: $fuenteprincipal;
@@ -103,6 +103,10 @@
                 &:hover img {
                     transform:  scale(1.2);
                 }
+            }
+
+            p {
+                font-size: 2rem;
             }
         }   
     

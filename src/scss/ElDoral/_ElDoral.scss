@@ -1,10 +1,12 @@
 /* descripcion general de las casas */
+
+
 #gallery-casa {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: -18.4rem;
+    margin-top: -27.4rem;
 
 }
 
@@ -51,8 +53,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--negro);
-    color: var(--blanco);
+    background-color: $negro;
+    color: $blanco;
     padding: 2rem;
         ul {
             display: flex;
@@ -104,13 +106,13 @@
     align-items: center;
     font-size: 2rem;
     text-align: justify;
-    background-color: var(--blanco);
-    color: var(--negro);
+    background-color: $blanco;
+    color: $negro;
     gap: 1rem;
 }
 
 .descripcion-casa-contenido {
-    border-bottom: solid 1px var(--negro);
+    border-bottom: solid 1px $negro;
 }
 
 .parking {
@@ -190,15 +192,27 @@
 /* ubicanos */
 
 .mapa {
-    background-color: var(--blanco);
+    background-color: $blanco;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 1px var(--negro);
+    border: solid 1px $negro;
     p {
+        text-align: center;
         font-size: 2rem;
     }
+
+    button {
+        background-color: $primario;
+        a {
+            color: $negro;
+        }
+        @include desktop {
+            margin: 0 auto;
+        }
+    }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -276,15 +290,15 @@ iframe {
         margin: 0 auto;
         margin-top: 12rem;
         margin-bottom: 0;
-        border: solid 1px var(--primario);
+        border: solid 1px $primario;
       
     }
     .descripcion-casa {
-        background-color: var(--blanco);
+        background-color: $blanco;
         border:solid 1px #000000;
         color: var(--negro);
         font-size: 5rem;
-        font-family: var(--fuenteprincipal);
+        font-family:$fuenteprincipal;
         padding: 2rem;
         gap: 2rem;
         margin: 1rem auto;
@@ -302,7 +316,7 @@ iframe {
     .descripcion-casa-contenido__h3 {
         font-size: 5rem;
         text-decoration: none;
-        color: var(--blanco);
+        color: $blanco;
     }
     .descripcion-casa ul {
         display: flex;
@@ -312,7 +326,6 @@ iframe {
         font-size: 4rem;
         display: flex;
         flex-direction: column;
-        
         align-items: center;
         margin: 5rem auto;
     }
@@ -329,8 +342,8 @@ iframe {
     }
 
     .mapa{
-        font-family: var(--fuenteprincipal);
-        background-color: var(--blanco );
+        font-family: $fuenteprincipal;
+        background-color: $blanco ;
         display: block;
         border: none;
         column-gap: 0;
@@ -367,9 +380,9 @@ iframe {
     .mapa li {
         display: flex;
         flex-direction: column;
-        font-family: var(--fuenteprincipal);
-        background-color: var(--blanco);
-        border: solid 1px var(--negro);
+        font-family: $fuenteprincipal;
+        background-color: $blanco;
+        border: solid 1px $negro;
         width: 95%;
         justify-content:space-between;
         align-items: center;

@@ -103,6 +103,7 @@ function openLightbox(videoSrc, caption) {
 
     lightbox.style.display = "block";
     document.body.classList.add("modal-open");
+    document.body.style.overflow = 'hidden'; // Desactivar el scroll
 }
 
 function closeLightbox() {
@@ -114,6 +115,7 @@ function closeLightbox() {
 
     lightbox.style.display = "none";
     document.body.classList.remove("modal-open");
+    document.body.style.overflow = 'auto'; // Reactivar el scroll
 }
 
   

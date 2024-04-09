@@ -12,6 +12,9 @@ html{
 body {
    overflow-x: hidden;
    background: #e9e9e9;
+   background-image: url(../../../build/img/body.webp);
+   background-size: 2vw;
+   background-repeat: repeat;
 /*    
    background: radial-gradient(circle, var(--primario) 20%, var(--blanco) 100%);
     */
@@ -62,7 +65,7 @@ h2 {
 h3 {
 
     font-size: 2.4rem;
-    background: -webkit-linear-gradient($secundario, $negro);
+    background: -webkit-linear-gradient($blanco, $negro);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -1,21 +1,31 @@
 //galeria global
 
 .linea {
-    background: var(--amarillo);
+    background: $amarillo;
     height: 1rem;
     width: 100%;
     display: block;
 }
 
+.sombreado {
+    background-color: $blanco;
+    box-shadow: 0 0 6px #000;
+    padding: none;
+    
+}
+
 .galeria {
-    background-color: var(--blanco);
+    background-color:$blanco;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
     width: 100%;
     gap: 2rem;
-    /* padding: 2rem; */
+    @include tablet {
+        padding:1rem;
+    }
     overflow: hidden;
     margin-bottom: 1rem;
+
 
     a {
         display: block;
@@ -23,8 +33,17 @@
         overflow: hidden;
         box-shadow:  0 0 6px $negro;
         &:hover img {
-            transform:  scale(1.2);
+            transform:  scale(1.05);
         }
+    }
+    p {
+        background-color: $base_azul;
+        text-align: center;
+        color: $negro;
+        font-size: 2rem;
+        font-family: $fuenteprincipal;
+        margin-bottom: 0;
+        
     }
 
     img {
@@ -51,27 +70,29 @@
 }
 
 .light-box {
+    display: none;
     position: fixed;
     top: -100%; /* Cambié '250' a '-100%' para que esté inicialmente fuera de la pantalla */
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    z-index: 1000;
+    height: 100%;
+    z-index: 1;
     padding:2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: top 0.3s ease-out; /* Añadí una transición para suavizar el movimiento */
-
     img {
         width: 60vw;
         max-height: 85vh;
     }
 
     &:target {
-        top: 380;
+        top: 350;
         @include desktop {
-            top:80;
+           
+            top:0;
         }
     }
 }

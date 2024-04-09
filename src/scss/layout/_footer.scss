@@ -1,13 +1,16 @@
 
 
 .footer{
-    background-color:$base_azul;
+    // background-color:$gris;
+    background-image: url('../img/waves.gif');
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
     @include desktop {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
-        font-family: var(--fuenteprincipal);
+        font-family: $fuenteprincipal;
     }
 
     .footer-columna {
@@ -17,7 +20,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: flex-start;
-            color: $negro;
+            color: $blanco;
             width: 105%;
             margin-bottom: 0;
             gap: 2rem;
@@ -29,6 +32,7 @@
         align-items: center;
         text-align: center;
         font-size: 2rem;
+        color: $blanco;
         font-family: $fuenteprincipal;
     
     
@@ -60,7 +64,7 @@
         }
         a {
             margin: 0 auto;
-            color: $negro;
+            color: $blanco;
             
         }
 
@@ -126,7 +130,7 @@
      a {
         
         align-items: center;
-        color: $negro;
+        color: $blanco;
         margin-bottom: 2rem;
 
      }
