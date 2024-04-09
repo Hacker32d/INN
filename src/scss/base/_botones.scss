@@ -10,6 +10,10 @@
     @include boton ($rosa, inline-block)
 }
 
-.boton-base-azul {
+.boton-baseazul {
     @include boton ($base_azul, inline-block)
+}
+
+.boton-gris {
+    @include boton($gris, inline-block)
 }

@@ -84,6 +84,7 @@
     .caja__nosotros {
     display: grid;
     width: 95%;
+    margin-top: -25rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     background: rgb(238,174,202);
