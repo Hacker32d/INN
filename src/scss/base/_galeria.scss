@@ -89,7 +89,7 @@
     }
 
     &:target {
-        top: 350;
+        top: 0;
         @include desktop {
            
             top:0;

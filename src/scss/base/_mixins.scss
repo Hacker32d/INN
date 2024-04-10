@@ -1,4 +1,10 @@
 /** Media Queries **/
+@mixin smallcell {
+    @media (min-width: #{$cell}) {
+        @content;
+    }
+}
+
 @mixin telefono {
     @media (min-width: #{$telefono}) {
         @content;

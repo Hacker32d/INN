@@ -13,13 +13,18 @@ const cache = require('gulp-cache');
 const clean = require('gulp-clean');
 const webp = require('gulp-webp');
 
+
+
+
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
     imagenes: 'src/img/**/*',
     media: 'src/media/**/*',
-    descripcion: 'src/descripcion/**/*'
+    descripcion: 'src/descripcion/**/*',
+
 }
+
 function videos() {
     return src(paths.media)
       .pipe(dest('build/media'));
@@ -65,7 +70,6 @@ function versionWebp() {
         .pipe(notify({ message: 'Imagen Completada' }));
 }
 
-
 function watchArchivos() {
     watch(paths.scss, css);
     watch(paths.js, javascript);
@@ -75,8 +79,11 @@ function watchArchivos() {
 }
 
 
+
+
 exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.videos = videos;
 exports.descripcion = descripcion;
 exports.default = parallel(css, javascript, imagenes, versionWebp, videos, descripcion, watchArchivos);
+
