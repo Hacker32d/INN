@@ -20,8 +20,8 @@ const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
     imagenes: 'src/img/**/*',
-    media: 'src/media/**/*',
-    descripcion: 'src/descripcion/**/*',
+    media: 'src/media/**/*'
+    // descripcion: 'src/descripcion/**/*',
 
 }
 
@@ -30,10 +30,10 @@ function videos() {
       .pipe(dest('build/media'));
   }
 
-function descripcion() {
-return src(paths.descripcion)
-    .pipe(dest('build/descripcion'));
-}
+// function descripcion() {
+// return src(paths.descripcion)
+//     .pipe(dest('build/descripcion'));
+// }
   
 
 function css() {
@@ -75,7 +75,7 @@ function watchArchivos() {
     watch(paths.js, javascript);
     watch(paths.imagenes, imagenes);
     watch(paths.imagenes, versionWebp);
-    watch(paths.media, videos, descripcion);
+    watch(paths.media, videos);
 }
 
 
@@ -84,6 +84,5 @@ function watchArchivos() {
 exports.css = css;
 exports.watchArchivos = watchArchivos;
 exports.videos = videos;
-exports.descripcion = descripcion;
-exports.default = parallel(css, javascript, imagenes, versionWebp, videos, descripcion, watchArchivos);
+exports.default = parallel(css, javascript, imagenes, versionWebp, videos,  watchArchivos);
 

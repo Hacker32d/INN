@@ -68,33 +68,48 @@
       
 
         <!-- aqui inicia el Cuerpo -->
+        <div class="Formulario">
+     
+                <form id="contactForm">
+                    <label class="contacto__label" for="nombre">Nombre y Apellido:</label>
+                    <input class="contacto__input" type="text" id="nombre" name="nombre" required>
+              
+                    <label class="contacto__label" for="email">Correo Electronico:</label>
+                    <input class="contacto__input" type="email" id="email" name="email" required>
+              
+                    <label class="contacto__label" for="telefono">Numero de Teléfono:</label>
+                    <input class="contacto__input" type="tel" id="telefono" name="telefono" required>
+                    
+                    <label class="contacto__label" for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              
+                    <button class="boton-rosa" type="sumit" onclick="enviarMensaje()">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg> Enviar Mensaje</button>
+                </form>
+         
+          
+
+            <div class="informaciones">
+                <div class="informaciones__img">
+                    <picture>
+    
+                    </picture>
+                    <a href="#">svg</a>
+                </div>
+            </div>
+        </div>
 
        
-        <section class="contenedor__contacto">
+       
+      
          
            
-            <form id="contactForm">
-                <label class="contacto__label" for="nombre">Nombre y Apellido:</label>
-                <input class="contacto__input" type="text" id="nombre" name="nombre" required>
-          
-                <label class="contacto__label" for="email">Correo Electronico:</label>
-                <input class="contacto__input" type="email" id="email" name="email" required>
-          
-                <label class="contacto__label" for="telefono">Numero de Teléfono:</label>
-                <input class="contacto__input" type="tel" id="telefono" name="telefono" required>
-          
-                <label class="contacto__label" for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-          
-                <button class="boton-rosa" type="sumit" onclick="enviarMensaje()">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                      <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                    </svg> Enviar Mensaje</button>
-            </form>
-     
-      </section>
+           
+
  
       <footer class="footer">
          <span class="linea-azul"></span> 

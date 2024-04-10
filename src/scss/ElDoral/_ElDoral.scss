@@ -11,17 +11,18 @@
 }
 
 .main-caja2 {
-    .contenedor__contacto {
-        
-    }
+  
 }
-
+.contenedor__contacto {
+        margin-top: -70rem;
+}
 .click-img  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: $negro;
     font-size: 2rem;
     margin: 0 auto;
     animation: cambio-color 2s infinite alternate;  /* cambiar color sin parar */
@@ -31,14 +32,14 @@
 }
 @keyframes cambio-color {
     0% {
-        color: $gris;
+        color: $primario;
     }  
     50% {
         color:$rosa; /* Color inicial */
     }
    
     100% {
-        color: $primario; /* Color final (vuelve al inicial) */
+        color: $amarillo; /* Color final (vuelve al inicial) */
     }
 }
 .click-img:hover {

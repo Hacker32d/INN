@@ -1,35 +1,59 @@
 //globales
-.contenedor__contacto {
-    display: block;
-    position: relative;
-    max-width: 700px;
-    margin-bottom: -2rem;
-    padding: 2rem;
-    margin: -50rem auto;
-    /* border: solid 1px var(--blanco); */
-    box-shadow:  0 0 6px var(--negro);
-    /* overflow: hidden; */
-    margin-bottom: -0.1rem;
-        @include tablet {
-                margin-top: -64.3rem;
-        }
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgb(220, 220, 220) 0%, rgba(148,187,233,1) 100%);
-    button {
-        &:hover {
-            transition: 1s;
-            scale: 1.1;
-        }
+// .contenedor__contacto {
+//     display: block;
+//     position: relative;
+//     max-width: 700px;
+//     margin-bottom: -2rem;
+//     padding: 2rem;
+//     margin: -50rem auto;
+//     /* border: solid 1px var(--blanco); */
+//     box-shadow:  0 0 6px var(--negro);
+//     /* overflow: hidden; */
+//     margin-bottom: -0.1rem;
+//         @include tablet {
+//                 margin-top: -64.3rem;
+//         }
+//     background: rgb(238,174,202);
+//     background: radial-gradient(circle, rgb(220, 220, 220) 0%, rgba(148,187,233,1) 100%);
+//     button {
+//         &:hover {
+//             transition: 1s;
+//             scale: 1.1;
+//         }
+//     }
+// }
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30rem;
+    @include tablet {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-top: -20rem;
+        justify-content: center;
     }
+   
 }
 
+
+
 #contactForm {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/build/img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2rem;
     gap: 1px;
-    font-family: var(--fuenteprincipal);
+    font-family: $fuenteprincipal;
     font-size: 2rem;
     font-weight: 1rem;
     margin-bottom: 0;
+    text-align: left;
+   
+        @include tablet {
+            text-align: left;
+        }
 
 }
 .contacto__label {
@@ -53,15 +77,17 @@
     transition: transform .5s ease;
 }
 
-@include desktop {
-    .contenedor__contacto {
-        background-color:$secundario;
-        position: relative;
-        max-width: 1000px;
-        margin: -48rem auto 1.1rem;
-        padding: 20px;
-        /* border: solid 1px var(--blanco); */
-        box-shadow:  0 0 6px var(--negro);
-        overflow: hidden;
+    // .contenedor__contacto {
+    //     background-color:$secundario;
+    //     position: relative;
+    //     max-width: 1000px;
+    //     margin: -48rem auto 1.1rem;
+    //     padding: 20px;
+    //     /* border: solid 1px var(--blanco); */
+    //     box-shadow:  0 0 6px var(--negro);
+    //     overflow: hidden;
+    // }
+
+    .informaciones__img {
+      
     }
-}

@@ -2,7 +2,7 @@
 
 .footer{
     // background-color:$gris;
-    background-image: url('../img/waves.gif');
+    background-image: url('../img/footer/footer3.jpg');
     background-repeat: no-repeat;
     background-size: 100vw 90vh;
     @include desktop {
@@ -20,7 +20,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: flex-start;
-            color: $blanco;
+            color: $negro;
             width: 105%;
             margin-bottom: 0;
             gap: 2rem;
@@ -32,7 +32,7 @@
         align-items: center;
         text-align: center;
         font-size: 2rem;
-        color: $blanco;
+        color: $negro;
         font-family: $fuenteprincipal;
     
     
@@ -109,16 +109,16 @@
             list-style: none;
             text-align: center;
             align-items: center;
-            color: $blanco;
+            color: $negro;
             gap: 2rem;
             }
 
             li {
                 &:hover {
-                    background-color: $primario;
+                    background-color: $gris;
                     background-size: 100%;
                     justify-content: space-around;
-                    color: $blanco;
+                    color: $negro;
                 }
             }
         }
@@ -130,7 +130,7 @@
      a {
         
         align-items: center;
-        color: $blanco;
+        color: $negro;
         margin-bottom: 2rem;
 
      }
