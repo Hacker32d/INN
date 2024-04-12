@@ -40,13 +40,16 @@
 
  
     .cinta {
-        background-color:$negro;
+        // background-color:$negro;
         width: 100%;
         padding: 3rem;
         text-align: center;
         font-family:$fuenteprincipal;
-        background:$negro;
-        background: linear-gradient(90deg, rgb(35, 40, 50) 0%, $negro 50%);
+        background-image: url('../../../build/img/waves.gif');
+        background-size: 100vw 12vh;
+        background-repeat: no-repeat;
+        // background:$negro;
+        // background: linear-gradient(90deg, rgb(35, 40, 50) 0%, $negro 50%);
         font-size: 2rem;
         margin-bottom: 0;
         color: $blanco;
@@ -100,7 +103,7 @@
   
     }
     .setting__texto{
-        @include desktop {
+         
             text-align: justify;
             font-size: 2rem;
 
@@ -121,7 +124,7 @@
                     color: $negro;
                 }
             }
-        }
+        
 
      font-family:$fuenteprincipal;
      margin-top: 4rem;

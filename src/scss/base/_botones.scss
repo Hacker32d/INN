@@ -26,5 +26,5 @@
 }
 .linea-azul {
     @include linea($primario, block);
-   background-color: $primario;
+   background-color: $secundario;
 }
