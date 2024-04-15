@@ -10,9 +10,7 @@
 
 }
 
-.main-caja2 {
-  
-}
+
 .contenedor__contacto {
         margin-top: -70rem;
 }
@@ -123,7 +121,7 @@
     padding: 0.5em 1.2em;
     background: $blanco;
     border-radius: 5%;
-    border-color: $negro;
+    border-color: $blanco;
     position: relative;
   }
   .parking:before {
@@ -192,68 +190,7 @@
 /* aqui termina */
 /* ubicanos */
 
-.mapa {
-    background-color: $blanco;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px $negro;
-    p {
-        text-align: center;
-        font-size: 2rem;
-    }
 
-    button {
-        background-color: $primario;
-        a {
-            color: $negro;
-        }
-        @include desktop {
-            margin: 0 auto;
-        }
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        align-items: center;
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
-        column-gap: 1rem;
-        text-align: center;
-        border: solid 1px var(--negro);
-        
-        
-    }
-    li {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.4rem;
-        border-bottom:var(--amarillo) ;
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    button {
-        display: flex;
-
-    }
-}
-
-.mapa-municipio {
-    margin-left: -1rem;
-}
-
-iframe {
-    width: 100%;
-    margin-top: 0rem;
-}
 
 @media (min-width:900px) {
     .descripcion-main {
@@ -377,44 +314,102 @@ iframe {
 
     }
 
+}
+    ////////PRUEBAS ////////////////
+    
 
-    .mapa li {
-        display: flex;
-        flex-direction: column;
-        font-family: $fuenteprincipal;
-        background-color: $blanco;
-        border: solid 1px $negro;
-        width: 95%;
-        justify-content:space-between;
-        align-items: center;
-        list-style-type: none;
-        font-size: 2.4rem;
-        margin: 0 auto;
-        border: none;
-      
 
-        
-       
-        
+
+    .doral-caja{
+        display: block;
+        margin-top: -34rem;
+     
+        @include tablet {
+            margin-right: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 20rem;
+          }
+        @include desktop {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            background-color: $gris;
+            width: 80%;
+            margin: -26rem auto 6rem;
+            gap: 4rem;
+        }
+
     }
-
+  
+  
    
-    iframe {
-        width: 500px;
-        height: 400px;
-        margin-top: 0rem;
-        box-sizing: border-box;
-    }
+    .doral-descripcion {
+        width: 100%;
+     
+      h3 {
+        font-size: 2rem;
+  
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 2rem;
+      }
 
-  ul {
-    background-color: $blanco;
-    margin: 0;
-    padding: 0;
-  }
+      @include tablet {
+        margin-bottom: -19.7rem;
+      }
 
+      @include desktop {
+        margin-top: 2.5rem;
+        padding-right: 1rem;
+      }
+
+
+         
 
  
-
-
+    }
+   
+    .doral-caja2 {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: $blanco;
+      // background-image: url(/build/img/footer.jpeg);
+      background-size: 910px;
+      background-repeat: no-repeat;
+   
+  
+      p {
+        justify-content: center;
+      }
+  
+    }
+  
+    .doral-svg {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      column-gap: 1rem;
+      align-items: center;
+      background-color: $blanco;
+      ul {
+        display: flex;
+        flex-direction: column;
+          @include tablet {
+            flex-direction: row;
+          }
+        column-gap: 2rem;
+      }
+      li {
+        list-style-type: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: $negro;
+        text-align: center;
+        padding: 0;
+      }
+      
+    }
     
-}
+  
+

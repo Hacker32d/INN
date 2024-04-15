@@ -154,3 +154,135 @@
             max-width: 80%;
             max-height: 80%;
         }
+
+
+//carrusel
+
+.carousel-container {
+
+    position: relative;
+    width: 100%;
+    margin-left: 1rem;
+    overflow: hidden; /* Oculta el desbordamiento horizontal */
+  }
+  
+  .carousel {
+    display: flex;
+  }
+  
+  .carousel img {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  
+  #prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn {
+    right: 10px;
+  }
+  
+  //area hover
+  .area:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: $base_azul;
+    border-radius: 5%;
+    transition: all 1s ease;
+  }
+  .area:hover:before {
+  width: 100%;
+  }
+
+  //mapa
+
+  .mapa {
+    background-color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $negro;
+    p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    button {
+        display: flex;
+        margin: 0 auto;
+        background-color: $gris;
+        a {
+            color: $negro;
+        }
+        @include desktop {
+            margin: 0 auto;
+            
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        column-gap: 1rem;
+        text-align: center;
+        border: solid 1px var(--negro);
+        
+        
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+        border-bottom:var(--amarillo) ;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+  
+}
+
+.mapa-municipio {
+    margin-left: -1rem;
+}
+
+   
+    iframe {
+        width: 500px;
+        height: 400px;
+        margin-top: 0rem;
+        box-sizing: border-box;
+    }
+
+  ul {
+    background-color: $blanco;
+    margin: 0;
+    padding: 0;
+  }

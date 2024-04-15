@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/build/css/app.css">
     <title>Aurora</title>
-
 </head>
 
 
@@ -64,136 +63,64 @@
         </style>
     </head>
     <body>
-    <main class ="descripcion-main">
-        <section class="main-caja1">
-            
-            <div id="gallery-casa">
-             <div class="click-img"> <p>Haz click en la imagen </p></div>
-                <img class="thumbnail sombra"src="../../../build/img/ElDoral/Aurora/casa (6).jpeg" alt="Imagen 1" onclick="openLightbox('../../../build/media/ElDoral/promesa.mp4', 'Imagen 1')">
-                <div class="descripcion-casa sombra">
-                    <h3 class="descripcion-casa-contenido__h3">Descripcion</h3>
-                    <div class="descripcion-casa-contenido">
-                        <p>
-                            Sumérgete en la serena belleza del <strong>Modelo Aurora</strong>, una residencia que cautiva con su amplitud y su diseño encantador. Con una generosa área de construcción de 40.83 metros cuadrados y un vasto terreno de 226.97 varas cuadradas, esta vivienda se destaca como una de las opciones más espaciosas y acogedoras de la región. Sus dos confortables habitaciones ofrecen un refugio íntimo para cada miembro de la familia, mientras que el baño completo añade practicidad y comodidad al hogar. Desde la luminosidad que inunda cada rincón hasta la meticulosa distribución de los espacios, el Modelo Aurora ofrece un estilo de vida único donde cada miembro de la familia puede disfrutar plenamente de su propio espacio. Descubre la armonía entre 
-                            amplitud y confort que esta residencia tiene para ofrecer y crea recuerdos inolvidables en el hogar perfecto para toda la familia.</p>
-                    </div>
-                    <ul class="descripcion-ul">
-                        <div class="parking">
-                            <li>Parqueo<small><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-parking-circle" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M10 16v-8h2.667c.736 0 1.333 .895 1.333 2s-.597 2 -1.333 2h-2.667" />
-                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-                              </svg></small></li>
-                        </div>
-                    
-                        <div class="area">
-                            <li>Area<small><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-airtable" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M3 10v8l7 -3v-2.6z" />
-                                <path d="M3 6l9 3l9 -3l-9 -3z" />
-                                <path d="M14 12.3v8.7l7 -3v-8z" />
-                              </svg></small></li>
-                        </div>
-                       
-                        <div class="seguridad">
-                            <li>Seguridad<small><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-half-filled" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
-                                <path d="M12 3v18" />
-                                <path d="M12 11h8.9" />
-                                <path d="M12 8h8.9" />
-                                <path d="M12 5h3.1" />
-                                <path d="M12 17h6.2" />
-                                <path d="M12 14h8" />
-                              </svg></small></li>
-                        </div>
-                      
-                    </ul>
-                </div>
-               
+        <div class="doral-caja">
+
+            <div class="carousel-container" style="margin-top: 6rem;margin-bottom: 0;">
+                <div class="carousel">
+                <img src="../../../build/img/ElDoral/aurora/casa (6).jpeg" alt="Imagen 1" onclick="openLightbox('../../../build/media/ElDoral/brisa.mp4', 'Imagen 1')">
+                <img src="../../../build/img/ElDoral/sueno/Maqueta-Sueno.jpg" alt="Imagen 2" onclick="openLightbox('../../../build/media/ElDoral/brisa.mp4', 'Imagen 2')">
+                <img src="../../../build/img/ElDoral/aurora/casa (6).jpeg" alt="Imagen 3" onclick="openLightbox('../../../build/media/ElDoral/brisa.mp4', 'Imagen 3')">
+    
                 <!-- Agrega más imágenes según sea necesario -->
+                </div>
+              
+                <button id="prevBtn">Anterior</button>
+                <button id="nextBtn">Siguiente</button>
             </div>
-        </section>
-       
-        <div id="lightbox" style="display: none;">
            
-            <div id="light-box" class="lightbox">
-                <video id="lightbox-video" controls autoplay style="width: 100%; height: 100%;">
-                    <source id="video-source" src="" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-                <p id="lightbox-caption"></p>
-                <span onclick="closeLightbox()" style="cursor: pointer; color: #fff; position: absolute; top: 15px; right: 15px; font-size: 24px;">&times;</span>
-            </div>
-        </div>
-        
-        
-
-        <section class="main-caja2">
-            <aside class="casa__contacto">
-
+                
+                <div class="doral-descripcion">
+                    
+                    <div class="doral-caja2 sombra">
+                        <h3>descripcion</h3>
+                      <p>El modelo Aurora se distingue por ofrecer 40.83 metros cuadrados de construcción y un amplio terreno de 226.97 varas cuadradas, convirtiéndola en una de las opciones más espaciosas disponibles en la zona. Con dos habitaciones y un baño, esta vivienda proporciona un ambiente acogedor y funcional para que toda la familia pueda disfrutar cómodamente. Gracias a su diseño generoso y bien distribuido, el modelo Aurora ofrece un espacio ideal para crear recuerdos inolvidables y construir un hogar lleno de felicidad.
+                      </p>
+                       
+                      
+                    </div>
+                    <div id="lightbox" style="display: none;">
            
-                <div class="contenedor__contacto">
-             
-               
-                    <form id="contactForm">
-                        <label class="contacto__label" for="nombre">Nombre y Apellido:</label>
-                        <input class="contacto__input" type="text" id="nombre" name="nombre" required>
-                  
-                        <label class="contacto__label" for="email">Correo Electronico:</label>
-                        <input class="contacto__input" type="email" id="email" name="email" required>
-                  
-                        <label class="contacto__label" for="telefono">Numero de Teléfono:</label>
-                        <input class="contacto__input" type="tel" id="telefono" name="telefono" required>
-                  
-                        <label class="contacto__label" for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                  
-                        <button class="boton-gris" type="sumit" onclick="enviarMensaje()">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                              <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-                            </svg> Enviar Mensaje</button>
-                    </form>
+                        <div id="light-box" class="lightbox">
+                            <video id="lightbox-video" controls autoplay style="width: 100%; height: 100%;">
+                                <source id="video-source" src="" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <p id="lightbox-caption"></p>
+                            <span onclick="closeLightbox()" style="cursor: pointer; color: #fff; position: absolute; top: 15px; right: 15px; font-size: 24px;">&times;</span>
+                        </div>
+                    </div>
+                    <div class="contenedor mapa">
+                        <p>Direccion <button><a href="https://www.google.com/maps/place/Urbanizaci%C3%B3n+bethel/@12.1793975,-86.3714842,17z/data=!3m1!4b1!4m6!3m5!1s0x8f71511b61cac751:0xa62622f3360846b!8m2!3d12.1793923!4d-86.3666133!16s%2Fg%2F11c2p9dgpb?entry=ttu">Google Maps</a></p>  </button>
+                          
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.0147692544942!2d-86.36918822415022!3d12.179397531749839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71511b61cac751%3A0xa62622f3360846b!2sUrbanizaci%C3%B3n%20bethel!5e0!3m2!1ses-419!2sni!4v1712935305759!5m2!1ses-419!2sni" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                    
                 </div>
-                    
-            </aside>
-            <div class="contenedor mapa sombra">
-                <p>Direccion <button><a href="https://www.google.com/maps/place/Cd+El+Doral/@12.1990422,-86.3889152,17z/data=!3m1!4b1!4m6!3m5!1s0x8f71505a418ceb33:0x4dc2d1caa42fb238!8m2!3d12.1990363!4d-86.3864512!16s%2Fg%2F1x6q2tjm?entry=ttu">Google Maps</a></p>  </button>
-                    <ul>
-                        <li class="mapa-municipio">Municipio <p>Leon</p></li>
-                        <li>Ciudad <p>Leon</p></li> 
-                        <li>Sector <p>Leon</p></li> 
-                    </ul>
-                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.7259359470945!2d-86.38891523858916!3d12.19904218799999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71505a418ceb33%3A0x4dc2d1caa42fb238!2sCd%20El%20Doral!5e0!3m2!1ses-419!2sni!4v1710451164708!5m2!1ses-419!2sni"></iframe>
-        
-                </div>
-
-           <a href=""></a>
-           <h3 style="text-transform:uppercase;margin-top: 2rem;">imagenes</h3>
-           <div class="casas__galeria">
-          
-            <a href="#image1"><img src="../../img/ElDoral/sueno/casa (4).jpeg" alt="imagen sueno"></a>
-            <a href="#image2"><img src="../../img/ElDoral/sueno/Maqueta-Sueno.jpg" alt="imagen Maqueta-Sueno"></a>
+           
             
            
-      
+
+            </div>
            
-        </div>
-        </section>
-       
-    </main>
 
     <!-- aqui termina el main -->
 
   
    
    
-       
+  
     <footer class="footer">
-          <span class="linea-azul"></span>
+        <span class="linea-azul"></span>
 
         <div class="footer-columna">
             <div class="setting__proyectos">

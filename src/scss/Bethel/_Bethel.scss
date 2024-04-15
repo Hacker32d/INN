@@ -1,64 +1,27 @@
-.bethel {
-  display: flex;
-  flex-direction: column;  
-}
 
 .bethel-caja {
   display: flex;
   flex-direction: column;
-  background-color: $blanco;
-  @include tablet {
+  background-color: $gris;
+  @include desktop {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 10rem;
+    width: 80%;
+    margin: 0 auto;
   }
   gap: 2rem;
 }
 
 
-.carousel-container {
-  
-    position: relative;
-    width: 100%;
-    margin-left: 1rem;
-    overflow: hidden; /* Oculta el desbordamiento horizontal */
-  }
-  
-  .carousel {
-    display: flex;
-  }
-  
-  .carousel img {
-    flex-shrink: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  #prevBtn, #nextBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    outline: none;
-  }
-  
-  #prevBtn {
-    left: 10px;
-  }
-  
-  #nextBtn {
-    right: 10px;
-  }
-  
+
  
   .bethel-descripcion {
+    width: 100%;
     margin: 0 auto;
-    padding: 1rem;
+    text-align: center;
     @include tablet {
-      margin-top: 1rem;
+      margin-top: -5rem;
       margin-right: 2rem;
       margin-left: 1rem;
     }
@@ -73,6 +36,7 @@
       font-size: 2rem;
     }
   }
+
   .bethel-caja2 {
     display: flex;
     flex-direction: column;
@@ -90,21 +54,41 @@
   }
 
   .bethel-svg {
-    display: inline-flex;
-    flex-direction: row;
-    margin: 0 auto;
-    column-gap: 1rem;
-    align-items: center;
-    background-color: $blanco;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    width: 100%;
+    border-radius: none;
+      ul {
+        align-items: center;
+      }
+    
+        @include tablet {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 0;
+          padding: 3rem;
+          column-gap: 2rem;
+          align-items: center;
+          background-color: $blanco;
+            ul {
+              display: flex;
+              gap: 4rem;
+            }
+        }
 
-    li {
-      list-style-type: none;
-      font-size: 2rem;
-      font-weight: 700;
-      color: $negro;
-      text-align: center;
-      padding: 0;
-    }
+            li {
+              list-style-type: none;
+              justify-content: space-around;
+              font-size: 2rem;
+              font-weight: 700;
+              color: $negro;
+              text-align: center;
+              padding: 0;
+            }
+  
+
     
   }
 
