@@ -7,18 +7,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencias (pesadísimas, nunca van a Git)
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# Salidas de compilación / Build
+build/
+coverage/
+
+# Variables de entorno y credenciales
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Editores y herramientas de desarrollo
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos temporales del Sistema Operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Caché de empaquetadores
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
