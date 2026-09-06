@@ -57,8 +57,12 @@ export default function Contacto() {
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* 1. Hero Banner Principal */}
-      <section className="relative bg-green-900/80 text-white py-24 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-green-900/90 z-10" />
+      <section className="relative bg-green-950 text-white py-24 px-4 text-center overflow-hidden">
+        {/* Capa de gradiente limpio de 2 tonos */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-green-950/90 z-10" />
+        
+        {/* Contenedor relativo con z-20 para que el texto quede al frente */}
+        <div className="relative z-20 max-w-4xl mx-auto space-y-3">
           <span className="text-xs uppercase font-bold tracking-widest text-green-400 bg-green-900/40 px-3.5 py-1.5 rounded-full border border-green-500/20">
             Atención Personalizada
           </span>
@@ -165,7 +169,7 @@ export default function Contacto() {
             </form>
           </div>
 
-          {/* Tarjetas de Asesores con Fotos Reales (lg:col-span-5) */}
+          {/* Tarjetas de Asesores (lg:col-span-5) */}
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-1">
               <span className="text-blue-600 font-bold uppercase tracking-wider text-xs">

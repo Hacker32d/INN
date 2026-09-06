@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+import ScrollToTop from './components/ScrollToTop';
+import PageLoader from './components/PageLoader';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,6 +17,8 @@ import SanMiguel from './pages/SanMiguel';
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+      <PageLoader />
       <div className="min-h-screen flex flex-col justify-between bg-white">
         <Navbar />
         <main className="flex-grow">

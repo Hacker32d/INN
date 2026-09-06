@@ -27,17 +27,17 @@ export default function SanMiguel() {
   const modelosAgotados = [
     {
       nombre: 'SM2 BÁSICA',
-      imagen: '/build/img/USanMiguel/SM2.webp',
+      imagen: '/src/img/USanMiguel/SM2B/photo (1).jpeg',
       alt: 'SM2 Basica',
     },
     {
       nombre: 'SM2 FULL',
-      imagen: '/build/img/USanMiguel/SM2-full.webp',
+      imagen: '/src/img/USanMiguel/SM2F/photo (1).jpeg',
       alt: 'SM2 Full',
     },
     {
       nombre: 'SM4 BÁSICA',
-      imagen: '/build/img/USanMiguel/SM4.webp',
+      imagen: '/src/img/USanMiguel/SM4.jpeg',
       alt: 'SM4 Basica',
     },
   ];
@@ -48,7 +48,7 @@ export default function SanMiguel() {
       <section className="relative bg-slate-900 text-white py-20 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-blue-950/90 z-10" />
         <img
-          src="/img/USanMiguel/intro.jpg"
+          src="/src/img/USanMiguel/intro.jpg"
           alt="Urbanización San Miguel"
           className="absolute inset-0 w-full h-full object-cover opacity-25"
         />
@@ -105,10 +105,10 @@ export default function SanMiguel() {
 
           <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-white">
             <img
-              src="/img/USanMiguel/intro.jpg"
+              src="/src/img/USanMiguel/intro.jpg"
               alt="Urbanización San Miguel Entorno"
               onError={(e) => {
-                e.target.src = '/img/casa.jpg';
+                e.target.src = '/src/img/casa.jpg';
               }}
               className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -167,7 +167,7 @@ export default function SanMiguel() {
                   src={modelo.imagen}
                   alt={modelo.alt}
                   onError={(e) => {
-                    e.target.src = '/img/casa.jpg';
+                    e.target.src = '/src/img/casa.jpg';
                   }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
