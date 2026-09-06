@@ -48,14 +48,8 @@ export default function Nosotros() {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Hero Banner Superior */}
       <section className="relative bg-slate-900 text-white py-20 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-slate-900/90 z-10" />
-        <img
-          src="/img/header.png"
-          alt="Sobre Nosotros"
-          className="absolute inset-0 w-full h-full object-cover opacity-25"
-        />
-        <div className="relative z-20 max-w-3xl mx-auto space-y-3">
-          <span className="text-xs uppercase font-bold tracking-widest text-blue-400 bg-blue-900/40 px-3.5 py-1.5 rounded-full border border-blue-500/20">
+<div className="absolute inset-0 bg-gradient-to-r from-black/95 to-emerald-950/85 z-10" />        <div className="relative z-20 max-w-3xl mx-auto space-y-3">
+          <span className="text-xs uppercase font-bold tracking-widest text-green-400 bg-green-900/40 px-3.5 py-1.5 rounded-full border border-green-500/20">
             Conoce LUX INMOBILIARIO
           </span>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight">
@@ -71,7 +65,7 @@ export default function Nosotros() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="text-blue-600 font-bold uppercase tracking-wider text-xs">
+            <span className="text-green-600 font-bold uppercase tracking-wider text-xs">
               Nuestra Identidad
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
@@ -80,7 +74,7 @@ export default function Nosotros() {
             <p className="text-slate-600 leading-relaxed text-base">
               En <strong className="text-slate-900">LUX INMOBILIARIO</strong>, somos un equipo dedicado y apasionado de profesionales del mercado inmobiliario, comprometidos a brindar un servicio excepcional a nuestros clientes. Con años de experiencia en el sector, nos hemos ganado una reputación sólida por nuestra integridad, conocimientos y resultados probados.
             </p>
-            <div className="bg-slate-100/80 border-l-4 border-blue-600 p-4 rounded-r-2xl">
+            <div className="bg-slate-100/80 border-l-4 border-green-600 p-4 rounded-r-2xl">
               <h3 className="font-bold text-slate-900 text-sm mb-1">Qué Hacemos</h3>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                 Nos dedicamos a brindar soluciones integrales en el mercado inmobiliario, especializándonos en la intermediación de ventas, alquileres y administración de propiedades residenciales y comerciales.
@@ -89,7 +83,7 @@ export default function Nosotros() {
             <div className="pt-2">
               <Link
                 to="/contacto"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-blue-600/25 transition-all text-sm uppercase tracking-wider"
+                className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-green-600/25 transition-all text-sm uppercase tracking-wider"
               >
                 Contactar Asesor
               </Link>
@@ -99,7 +93,7 @@ export default function Nosotros() {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200">
               <img
-                src="/img/casa.jpg"
+                src="/src/img/header.png"
                 alt="Vivienda modelo"
                 className="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-500"
               />

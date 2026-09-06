@@ -57,10 +57,9 @@ export default function Contacto() {
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* 1. Hero Banner Principal */}
-      <section className="relative bg-slate-900 text-white py-24 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-slate-900/85 to-slate-950/90 z-10" />
-        <div className="relative z-20 max-w-4xl mx-auto space-y-3">
-          <span className="text-xs uppercase font-bold tracking-widest text-blue-400 bg-blue-900/40 px-3.5 py-1.5 rounded-full border border-blue-500/20">
+      <section className="relative bg-green-900/80 text-white py-24 px-4 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-green-900/90 z-10" />
+          <span className="text-xs uppercase font-bold tracking-widest text-green-400 bg-green-900/40 px-3.5 py-1.5 rounded-full border border-green-500/20">
             Atención Personalizada
           </span>
           <h1 className="text-3xl sm:text-5xl font-black tracking-tight">

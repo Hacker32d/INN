@@ -59,7 +59,7 @@ function ProyectoCard({ proyecto }) {
             className={`inline-flex items-center gap-2 font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md ${
               proyecto.agotado
                 ? 'bg-slate-100 text-slate-400 hover:bg-slate-200 pointer-events-none'
-                : 'bg-slate-900 hover:bg-blue-600 text-white shadow-slate-900/10'
+                : 'bg-slate-900 hover:bg-green-600 text-white shadow-slate-900/10'
             }`}
           >
             <span>{proyecto.agotado ? 'Sin Disponibilidad' : 'Ver Detalles del Proyecto'}</span>
@@ -117,17 +117,17 @@ export default function Home() {
   return (
     <div className="bg-slate-100 min-h-screen pb-24">
       {/* Hero */}
-      <section className="bg-slate-900 text-white py-16 px-4">
+      <section className="bg-gradient-to-r from-black to-green-900 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
           <div className="space-y-2">
-            <span className="text-blue-400 font-bold uppercase tracking-widest text-xs">
+            <span className="text-green-400 font-bold uppercase tracking-widest text-xs">
               Portafolio Exclusivo • Lux Inmobiliaria
             </span>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight">
               Desarrollos Inmobiliarios
             </h1>
           </div>
-          <p className="text-slate-400 text-sm max-w-md">
+          <p className="text-white-400 text-sm max-w-md">
             Explora las urbanizaciones más representativas de Managua, equipadas con servicios completos e infraestructura de primera calidad.
           </p>
         </div>
@@ -166,7 +166,7 @@ export default function Home() {
                   <Link
                     key={item.id}
                     to={item.ruta}
-                    className="flex gap-4 p-3 rounded-2xl border border-slate-100 hover:border-blue-200 hover:bg-slate-50/80 transition-all group"
+                    className="flex gap-4 p-3 rounded-2xl border border-slate-100 hover:border-green-200 hover:bg-slate-50/80 transition-all group"
                   >
                     <div className="w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-slate-200 relative">
                       <img
@@ -197,7 +197,7 @@ export default function Home() {
               <div className="pt-2">
                 <Link
                   to="/contacto"
-                  className="w-full block text-center bg-slate-900 hover:bg-blue-600 text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition-colors shadow-sm"
+                  className="w-full block text-center bg-slate-900 hover:bg-green-600 text-white font-bold py-3 rounded-xl text-xs uppercase tracking-wider transition-colors shadow-sm"
                 >
                   Agendar Recorrido General
                 </Link>
