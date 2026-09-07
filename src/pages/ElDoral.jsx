@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-// Vite indexa automáticamente todas las fotos dentro de src/img/ElDoral/
 const imagenesDoral = import.meta.glob('@/img/ElDoral/**/*', { eager: true, import: 'default' });
 const getDoralImg = (path) => imagenesDoral[`/src/img/ElDoral/${path}`];
 
@@ -87,7 +86,7 @@ export default function ElDoral() {
     <div className="min-h-screen pb-20 text-slate-200">
       {/* 1. Hero Banner */}
       <section className="relative bg-slate-900 text-white py-24 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-slate-900/85 to-slate-950/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-slate-900/85 to-green z-10" />
         <img
           src={
             getDoralImg('sueno/casa (4).jpeg') ||
@@ -103,7 +102,7 @@ export default function ElDoral() {
         />
         <div className="relative z-20 max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2">
-            <span className="text-xs uppercase font-bold tracking-widest text-blue-400 bg-blue-900/40 px-3.5 py-1.5 rounded-full border border-blue-500/20">
+            <span className="text-xs uppercase font-bold tracking-widest text-emerald-300 bg-emerald-950/60 px-3.5 py-1.5 rounded-full border border-blue-500/20">
               La Nueva Ciudad de la Capital
             </span>
             <span className="text-xs uppercase font-bold tracking-widest text-emerald-300 bg-emerald-950/60 px-3.5 py-1.5 rounded-full border border-emerald-500/30">

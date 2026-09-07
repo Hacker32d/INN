@@ -74,7 +74,7 @@ export default function Bethel() {
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* 1. Banner Principal */}
       <section className="relative bg-slate-900 text-white py-24 px-4 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-slate-900/85 to-slate-950/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-slate-900/85 to-green-950/90 z-10" />
         <img
           src={getBethelImg('foto4.jpeg') || getBethelImg('casa1.jpeg')}
           alt="Urbanización Bethel"
