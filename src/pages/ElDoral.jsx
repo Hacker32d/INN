@@ -102,7 +102,7 @@ export default function ElDoral() {
         />
         <div className="relative z-20 max-w-4xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2">
-            <span className="text-xs uppercase font-bold tracking-widest text-emerald-300 bg-emerald-950/60 px-3.5 py-1.5 rounded-full border border-blue-500/20">
+            <span className="text-xs uppercase font-bold tracking-widest text-blue-300 bg-blue-950/60 px-3.5 py-1.5 rounded-full border border-blue-500/20">
               La Nueva Ciudad de la Capital
             </span>
             <span className="text-xs uppercase font-bold tracking-widest text-emerald-300 bg-emerald-950/60 px-3.5 py-1.5 rounded-full border border-emerald-500/30">
